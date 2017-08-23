@@ -7,7 +7,7 @@ surface_set_target(sur);
 draw_clear(c_black);
 draw_sprite_ext(sprite_index, image_index, lw / 2, lh / 2, image_xscale, image_yscale, image_angle, c_white, 1);   
 
-with (obj_ground) {
+with (obj_title) {
   minx = px[0];
   miny = py[0];
   maxx = px[3];

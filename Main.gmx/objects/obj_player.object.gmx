@@ -25,20 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>onAir = true;
-size = 400;
-sizeMax = 400;
-sizeMin =250;
-sizeIncre = 2;
+            <string>size = 800;
+sizeMax = 800;
+sizeMin = 700;
+sizeIncre = 10;
 light_colour = c_ltgray;
-
 
 light_offY = 0;
 light_offX = 0;
 light_pos_x = x;
 light_pos_y = y;
-
-facing_R = true;
 
 </string>
           </argument>
@@ -126,45 +122,7 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (vspeed &lt; 15){
-    vspeed += 1;
-}
-
-image_speed = 6/room_speed;
-
-if keyboard_check(vk_left){
-    x-=3;
-    facing_R = false;
-}
-
-if keyboard_check(vk_right){
-    x+=3;
-    facing_R = true;
-}
-
-//flip 
-if (facing_R == true){
-    image_xscale = 1;
-}else{
-    image_xscale = -1;
-}
-
-if place_meeting(x,y+2,obj_ground){
-    vspeed = 0;
-    onAir = false;
-}else{
-    onAir = true;
-}
-
-if keyboard_check_pressed(vk_up){
-    if(!onAir){
-        vspeed = -10;
-    }
-    onAir = true;
-}
-
-
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

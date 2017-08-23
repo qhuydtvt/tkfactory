@@ -20,16 +20,20 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <object>objects\obj_ground</object>
-    <object>objects\obj_control</object>
-    <object>objects\obj_light</object>
-    <object>objects\obj_near_light</object>
-    <object>objects\obj_torch_light</object>
-    <object>objects\obj_torch_light_2</object>
-    <object>objects\obj_torch_light_3</object>
-    <object>objects\obj_torch_light_4</object>
-    <object>objects\obj_torch_light_5</object>
-    <object>objects\obj_light_new</object>
+    <objects name="titles">
+      <object>objects\obj_title</object>
+    </objects>
+    <objects name="lights">
+      <object>objects\obj_light</object>
+      <object>objects\obj_torch_light_3</object>
+      <object>objects\obj_light_new</object>
+      <object>objects\obj_torch_light_4</object>
+      <object>objects\obj_near_light</object>
+      <object>objects\obj_torch_light_5</object>
+      <object>objects\obj_torch_light</object>
+      <object>objects\obj_torch_light_2</object>
+      <object>objects\obj_control</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
