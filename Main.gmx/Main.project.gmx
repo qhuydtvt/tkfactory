@@ -15,6 +15,8 @@
       <sprite>sprites\spr_title_3</sprite>
       <sprite>sprites\spr_title_4</sprite>
     </sprites>
+    <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_torch_item</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg</background>
@@ -25,6 +27,8 @@
     <script>scripts\light_update.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\obj_torch_item</object>
+    <object>objects\obj_enemy</object>
     <object>objects\obj_player</object>
     <objects name="titles">
       <object>objects\obj_title</object>

@@ -36,6 +36,11 @@ light_offX = 0;
 light_pos_x = x;
 light_pos_y = y;
 
+image_speed = 6 / room_speed;
+torch = instance_create(x + 5, y + 5, obj_torch_item);
+
+face_x = 0;
+face_y = 0;
 </string>
           </argument>
         </arguments>
@@ -132,18 +137,19 @@ dy = 0;
 
 if keyboard_check(vk_right) {
     dx += 5;
+    image_angle = -90;
 }
-
-if keyboard_check(vk_left) {
+else if keyboard_check(vk_left) {
     dx -= 5;
+    image_angle = 90;
 }
-
-if keyboard_check(vk_up) {
+else if keyboard_check(vk_up) {
     dy -= 5;
+    image_angle = 0;
 }
-
-if keyboard_check(vk_down) {
+else if keyboard_check(vk_down) {
     dy += 5;
+    image_angle = 180;
 }
 
 if instance_place(x + dx, y, obj_title) {
@@ -157,6 +163,8 @@ if instance_place(x, y + dy, obj_title) {
 }
 
 y += dy;
+
+
 </string>
           </argument>
         </arguments>

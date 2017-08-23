@@ -55,6 +55,11 @@ torch_holding = true;
         torch_holding = false;
     }
 }
+
+if keyboard_check_pressed(ord('-')) {
+    torch_holding = !torch_holding;
+    torch_time_left = 200;
+}
 </string>
           </argument>
         </arguments>
