@@ -47,7 +47,10 @@
     </objects>
     <objects name="ui">
       <object>objects\obj_hud</object>
-      <object>objects\obj_dialog</object>
+      <object>objects\obj_text</object>
+    </objects>
+    <objects name="states">
+      <object>objects\obj_state</object>
     </objects>
   </objects>
   <rooms name="rooms">
