@@ -45,6 +45,10 @@
       <object>objects\obj_torch_light_2</object>
       <object>objects\obj_control</object>
     </objects>
+    <objects name="ui">
+      <object>objects\obj_hud</object>
+      <object>objects\obj_dialog</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\factory_room</room>
