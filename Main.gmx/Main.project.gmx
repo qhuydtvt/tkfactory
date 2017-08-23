@@ -7,8 +7,14 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_ground</sprite>
     <sprite>sprites\spr_light</sprite>
+    <sprites name="titles">
+      <sprite>sprites\spr_title_0</sprite>
+      <sprite>sprites\spr_title_1</sprite>
+      <sprite>sprites\spr_title_2</sprite>
+      <sprite>sprites\spr_title_3</sprite>
+      <sprite>sprites\spr_title_4</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg</background>
@@ -22,6 +28,11 @@
     <object>objects\obj_player</object>
     <objects name="titles">
       <object>objects\obj_title</object>
+      <object>objects\obj_title_0</object>
+      <object>objects\obj_title_1</object>
+      <object>objects\obj_title_2</object>
+      <object>objects\obj_title_3</object>
+      <object>objects\obj_title_4</object>
     </objects>
     <objects name="lights">
       <object>objects\obj_light</object>
@@ -36,7 +47,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\factory_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

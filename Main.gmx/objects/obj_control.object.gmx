@@ -25,16 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// MUST HAVE: Create a surface for drawing all the lights
-sur = surface_create(room_width, room_height);
-
-// Create a light
-m = instance_create(0, 0, obj_light_new);
-with (m) {
-  light_change_scale(3, 3);
-  // Update the light, so it's surface is drawn correctly
-  light_update();
-}
+            <string>pre_load = false;
 </string>
           </argument>
         </arguments>
@@ -86,7 +77,22 @@ with (m)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// MUST HAVE: Draw all the lights to the surface
+            <string>
+if(!pre_load) {
+    pre_load = true;
+        // MUST HAVE: Create a surface for drawing all the lights
+    sur = surface_create(room_width, room_height);
+    
+    // Create a light
+    m = instance_create(0, 0, obj_light_new);
+    with (m) {
+      light_change_scale(3, 3);
+      // Update the light, so it's surface is drawn correctly
+      light_update();
+    }
+}
+
+// MUST HAVE: Draw all the lights to the surface
 surface_set_target(sur);
 draw_clear(c_black);
 draw_set_blend_mode(bm_add);
