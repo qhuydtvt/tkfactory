@@ -11,9 +11,11 @@
     <sprite>sprites\spr_light</sprite>
     <sprite>sprites\spr_torch</sprite>
     <sprite>sprites\spr_character</sprite>
+    <sprite>sprites\sprite5</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
