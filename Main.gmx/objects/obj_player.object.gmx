@@ -58,7 +58,8 @@ light_pos_y = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (sizeIncre &gt; 0){
+            <string>///Cua xeko
+if (sizeIncre &gt; 0){
     if (size &lt; sizeMax){
         size+=sizeIncre;
     }else{
@@ -100,6 +101,10 @@ draw_set_blend_mode(bm_normal);
 
 surface_reset_target();
 
+// Camera follow
+view_xview = x - view_wview / 2;
+view_yview = y - view_hview / 2;
+
 </string>
           </argument>
         </arguments>
@@ -122,7 +127,37 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>dx = 0;
+dy = 0;
+
+if keyboard_check(vk_right) {
+    dx += 5;
+}
+
+if keyboard_check(vk_left) {
+    dx -= 5;
+}
+
+if keyboard_check(vk_up) {
+    dy -= 5;
+}
+
+if keyboard_check(vk_down) {
+    dy += 5;
+}
+
+if instance_place(x + dx, y, obj_title) {
+    dx = 0;
+}
+
+x += dx;
+
+if instance_place(x, y + dy, obj_title) {
+    dy = 0;
+}
+
+y += dy;
+</string>
           </argument>
         </arguments>
       </action>
