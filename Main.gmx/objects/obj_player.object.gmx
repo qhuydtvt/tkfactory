@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>size = 800;
-sizeMax = 800;
-sizeMin = 700;
+sizeMax = 500;
+sizeMin = 350;
 sizeIncre = 10;
 light_colour = c_ltgray;
 
@@ -85,8 +85,10 @@ light_pos_y = y;
 
 var farSight = 40;
 
-draw_set_blend_mode(bm_add);
 //light for player
+draw_set_blend_mode(bm_add);
+draw_set_alpha(0.3);
+
 
 surface_set_target(light);
 draw_ellipse_colour(light_pos_x+light_offX-size/2-view_xview, light_pos_y+light_offY-size/2-view_yview, light_pos_x+light_offX+size/2-view_xview, light_pos_y+light_offY+size/2-view_yview,light_colour,c_black,false);
@@ -95,7 +97,7 @@ surface_reset_target();
 //lightScale for all other object. must got depth &gt; 80
 
 draw_set_blend_mode(bm_add);
-draw_set_alpha(0.8);
+draw_set_alpha(1);
 surface_set_target(light_layer_1);
 draw_ellipse_colour(light_pos_x+light_offX-(size-farSight)/2-view_xview, light_pos_y+light_offY-(size-farSight)/2-view_yview, light_pos_x+light_offX+(size-farSight)/2-view_xview, light_pos_y+light_offY+(size-farSight)/2-view_yview,light_colour,c_black,false);
 surface_reset_target();
@@ -137,19 +139,19 @@ dy = 0;
 
 if keyboard_check(vk_right) {
     dx += 5;
-    image_angle = -90;
 }
-else if keyboard_check(vk_left) {
+if keyboard_check(vk_left) {
     dx -= 5;
-    image_angle = 90;
 }
-else if keyboard_check(vk_up) {
+if keyboard_check(vk_up) {
     dy -= 5;
-    image_angle = 0;
 }
-else if keyboard_check(vk_down) {
+if keyboard_check(vk_down) {
     dy += 5;
-    image_angle = 180;
+}
+
+if (dx!=0 || dy!=0){
+    image_angle = radtodeg(arctan2(-dy,dx));
 }
 
 if instance_place(x + dx, y, obj_title) {

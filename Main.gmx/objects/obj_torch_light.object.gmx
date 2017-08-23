@@ -79,7 +79,7 @@ surface_reset_target();
           <argument>
             <kind>1</kind>
             <string>draw_set_blend_mode(bm_normal);
-draw_set_alpha(0.7);
+draw_set_alpha(0.5);
 draw_surface(light_layer_1,view_xview,view_yview);
 draw_set_alpha(1);
 draw_set_blend_mode(bm_normal);

@@ -10,6 +10,7 @@
     <sprite>sprites\spr_light</sprite>
     <sprites name="titles">
       <sprite>sprites\spr_title_0</sprite>
+      <sprite>sprites\spr_black</sprite>
       <sprite>sprites\spr_title_1</sprite>
       <sprite>sprites\spr_title_2</sprite>
       <sprite>sprites\spr_title_3</sprite>
@@ -20,6 +21,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg</background>
+    <background>background\bg_1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -39,14 +41,14 @@
       <object>objects\obj_title_4</object>
     </objects>
     <objects name="lights">
-      <object>objects\obj_light</object>
-      <object>objects\obj_torch_light_3</object>
       <object>objects\obj_light_new</object>
-      <object>objects\obj_torch_light_4</object>
+      <object>objects\obj_light</object>
       <object>objects\obj_near_light</object>
-      <object>objects\obj_torch_light_5</object>
       <object>objects\obj_torch_light</object>
       <object>objects\obj_torch_light_2</object>
+      <object>objects\obj_torch_light_3</object>
+      <object>objects\obj_torch_light_4</object>
+      <object>objects\obj_torch_light_5</object>
       <object>objects\obj_control</object>
     </objects>
     <objects name="ui">
