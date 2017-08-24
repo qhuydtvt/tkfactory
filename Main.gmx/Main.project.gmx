@@ -35,10 +35,12 @@
     <sprite>sprites\spr_san_deadline</sprite>
     <sprite>sprites\spr_ending</sprite>
     <sprite>sprites\spr_key</sprite>
+    <sprite>sprites\spr_key_hint_image</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg</background>
     <background>background\bg_1</background>
+    <background>background\bg_ending</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -91,6 +93,8 @@
         <object>objects\obj_camera_spot_for_key</object>
         <object>objects\obj_combination_hint</object>
         <object>objects\obj_san_deadline_image</object>
+        <object>objects\obj_key_hint_image</object>
+        <object>objects\obj_tv_story</object>
       </objects>
     </objects>
     <objects name="sounds">
@@ -101,6 +105,7 @@
     <room>rooms\tut_room</room>
     <room>rooms\factory_room</room>
     <room>rooms\gameover_room</room>
+    <room>rooms\victory_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

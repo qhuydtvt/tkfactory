@@ -30,6 +30,7 @@ sizeMax = 500;
 sizeMin = 350;
 sizeIncre = 5;
 light_colour = c_ltgray;
+state = 0;
 
 light_offY = 0;
 light_offX = 0;
@@ -41,6 +42,30 @@ image_speed = 6 / room_speed;
 
 face_x = 0;
 face_y = 0;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>state = 0;
 </string>
           </argument>
         </arguments>
@@ -90,15 +115,32 @@ light_pos_y = y;
 var farSight = 40;
 
 //light for player
-draw_set_blend_mode(bm_add);
-
-if torch_time_left &gt; 0 {
-    light_colour = c_ltgray;
+if state != 0 {
+    draw_set_blend_mode(bm_normal);
 } else {
-    light_colour = c_red;
+    draw_set_blend_mode(bm_add);
 }
 
-draw_set_alpha(0.5);
+
+if torch_time_left &gt; 0 {
+    if state != 0 {
+        light_colour = c_white;
+    } else {
+        light_colour = c_ltgray;
+    }
+} else {
+    if state != 0 {
+        light_colour = c_white;
+    } else {
+        light_colour = c_red;
+    }
+}
+
+if state != 0 {
+    draw_set_alpha(1);
+} else {
+    draw_set_alpha(0.5);
+}
 
 
 surface_set_target(light);
@@ -184,6 +226,16 @@ if (dx == 0 &amp;&amp; dy == 0) {
     sprite_index = 0;
 }
 
+if state == 0 {
+    sprite_index = spr_player;
+} else {
+    sprite_index = spr_player_camera;
+}
+
+if keyboard_check(ord('X')) {
+    state = 1;
+    alarm[0] = 10;
+}
 
 </string>
           </argument>

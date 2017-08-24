@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>if instance_place(x, y, obj_player) {
     obj_state.torch_holding = true;
-    obj_state.torch_time_left = 200;
+    obj_state.torch_time_left = 600;
     instance_destroy();
 }
 </string>
