@@ -29,6 +29,7 @@
     </sprites>
     <sprite>sprites\spr_template</sprite>
     <sprite>sprites\sprite15</sprite>
+    <sprite>sprites\spr_nuke_controller</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg</background>
@@ -75,6 +76,9 @@
         <object>objects\obj_camera_spot</object>
         <object>objects\obj_door</object>
         <object>objects\obj_hint</object>
+      </objects>
+      <objects name="factory">
+        <object>objects\obj_nuke_controller</object>
       </objects>
     </objects>
   </objects>

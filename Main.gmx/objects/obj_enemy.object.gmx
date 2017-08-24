@@ -27,7 +27,9 @@
             <kind>1</kind>
             <string>if (!obj_state.torch_holding) {
     visible = true;
-    mp_potential_step_object(obj_player.x, obj_player.y, 2, obj_title);
+    if distance_to_object(obj_player) &lt; 100 {
+        mp_potential_step_object(obj_player.x, obj_player.y, 2, obj_title);
+    }
     if instance_place(x, y, obj_player) {
         room_goto(gameover_room);
     }
