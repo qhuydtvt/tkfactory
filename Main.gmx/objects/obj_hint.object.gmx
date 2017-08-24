@@ -50,14 +50,13 @@
             <kind>1</kind>
             <string>if !player_enter &amp;&amp; instance_place(x, y, obj_player) {
     player_enter = true;
-    var door = instance_create(x, y, obj_image);
-    door.image_index = spr_hint_door;
+    var image_door = instance_create(x, y, obj_image_door);
 }
 
 if !instance_place(x, y, obj_player) &amp;&amp; player_enter {
     player_enter = false;
-    var door = instance_find(obj_image, 1);
-    with(door) {
+    var image_door = instance_find(obj_image_door, 1);
+    with(image_door) {
         active = false;
     }
 }
