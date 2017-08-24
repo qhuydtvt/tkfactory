@@ -166,6 +166,13 @@ if instance_place(x, y + dy, obj_title) {
 
 y += dy;
 
+if (dx == 0 &amp;&amp; dy == 0) {
+    image_speed = 0;
+} else {
+    image_speed = 6 / room_speed;
+    sprite_index = 0;
+}
+
 
 </string>
           </argument>
