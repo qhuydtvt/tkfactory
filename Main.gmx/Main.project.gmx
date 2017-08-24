@@ -20,6 +20,13 @@
     <sprite>sprites\spr_torch_item</sprite>
     <sprite>sprites\spr_camera_spot</sprite>
     <sprite>sprites\spr_door</sprite>
+    <sprites name="levels">
+      <sprites name="tut">
+        <sprite>sprites\spr_hint_door</sprite>
+        <sprite>sprites\spr_hint</sprite>
+      </sprites>
+    </sprites>
+    <sprite>sprites\spr_template</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg</background>
@@ -56,6 +63,7 @@
     <objects name="ui">
       <object>objects\obj_hud</object>
       <object>objects\obj_text</object>
+      <object>objects\obj_image</object>
     </objects>
     <objects name="states">
       <object>objects\obj_state</object>
@@ -64,6 +72,7 @@
       <objects name="tut">
         <object>objects\obj_camera_spot</object>
         <object>objects\obj_door</object>
+        <object>objects\obj_hint</object>
       </objects>
     </objects>
   </objects>

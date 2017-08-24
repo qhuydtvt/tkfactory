@@ -37,7 +37,7 @@ light_pos_x = x;
 light_pos_y = y;
 
 image_speed = 6 / room_speed;
-torch = instance_create(x + 5, y + 5, obj_torch_item);
+//torch = instance_create(x + 5, y + 5, obj_torch_item);
 
 face_x = 0;
 face_y = 0;
