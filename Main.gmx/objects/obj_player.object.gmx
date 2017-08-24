@@ -28,7 +28,7 @@
             <string>size = 800;
 sizeMax = 500;
 sizeMin = 350;
-sizeIncre = 10;
+sizeIncre = 5;
 light_colour = c_ltgray;
 
 light_offY = 0;
@@ -64,6 +64,10 @@ face_y = 0;
           <argument>
             <kind>1</kind>
             <string>///Cua xeko
+var torch_time_left = obj_state.torch_time_left;
+sizeMax = (torch_time_left / 600) * 150 + 450;
+sizeMin = (torch_time_left / 600) * 150 + 300;
+
 if (sizeIncre &gt; 0){
     if (size &lt; sizeMax){
         size+=sizeIncre;
@@ -87,7 +91,14 @@ var farSight = 40;
 
 //light for player
 draw_set_blend_mode(bm_add);
-draw_set_alpha(0.3);
+
+if torch_time_left &gt; 0 {
+    light_colour = c_ltgray;
+} else {
+    light_colour = c_red;
+}
+
+draw_set_alpha(0.5);
 
 
 surface_set_target(light);
