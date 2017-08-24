@@ -74,12 +74,16 @@
     <objects name="levels">
       <objects name="tut">
         <object>objects\obj_camera_spot</object>
-        <object>objects\obj_door</object>
+        <object>objects\object30</object>
         <object>objects\obj_tv</object>
         <object>objects\obj_image_door</object>
+        <object>objects\obj_door</object>
       </objects>
       <objects name="factory">
         <object>objects\obj_nuke_controller</object>
+        <object>objects\obj_key_hint</object>
+        <object>objects\obj_key</object>
+        <object>objects\obj_camera_spot_for_key</object>
       </objects>
     </objects>
     <objects name="sounds">
