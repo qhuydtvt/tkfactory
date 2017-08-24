@@ -28,6 +28,9 @@
             <string>if (!obj_state.torch_holding) {
     visible = true;
     mp_potential_step_object(obj_player.x, obj_player.y, 2, obj_title);
+    if instance_place(x, y, obj_player) {
+        room_goto(gameover_room);
+    }
 } else {
     visible = false;
 }
