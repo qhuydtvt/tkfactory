@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_player_camera</sprite>
     <sprite>sprites\spr_light</sprite>
     <sprites name="titles">
       <sprite>sprites\spr_title_0</sprite>
@@ -30,7 +31,10 @@
     <sprite>sprites\spr_template</sprite>
     <sprite>sprites\sprite15</sprite>
     <sprite>sprites\spr_nuke_controller</sprite>
+    <sprite>sprites\spr_explo</sprite>
     <sprite>sprites\spr_san_deadline</sprite>
+    <sprite>sprites\spr_ending</sprite>
+    <sprite>sprites\spr_key</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg</background>
