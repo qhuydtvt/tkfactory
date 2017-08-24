@@ -474,6 +474,7 @@
     <instance objName="obj_nuke_controller" x="960" y="1696" name="inst_479EAF1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_key" x="32" y="1664" name="inst_3E9CCCF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_camera_spot_for_key" x="160" y="1664" name="inst_6E84C0F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_combination_hint" x="864" y="800" name="inst_0D52680C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

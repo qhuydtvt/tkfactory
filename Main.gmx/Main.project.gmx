@@ -30,6 +30,7 @@
     <sprite>sprites\spr_template</sprite>
     <sprite>sprites\sprite15</sprite>
     <sprite>sprites\spr_nuke_controller</sprite>
+    <sprite>sprites\spr_san_deadline</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg</background>
@@ -84,6 +85,8 @@
         <object>objects\obj_key_hint</object>
         <object>objects\obj_key</object>
         <object>objects\obj_camera_spot_for_key</object>
+        <object>objects\obj_combination_hint</object>
+        <object>objects\obj_san_deadline_image</object>
       </objects>
     </objects>
     <objects name="sounds">
