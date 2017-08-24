@@ -24,6 +24,7 @@
       <sprites name="tut">
         <sprite>sprites\spr_hint_door</sprite>
         <sprite>sprites\spr_hint</sprite>
+        <sprite>sprites\spr_tivi</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_template</sprite>
