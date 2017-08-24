@@ -75,7 +75,7 @@
       <objects name="tut">
         <object>objects\obj_camera_spot</object>
         <object>objects\obj_door</object>
-        <object>objects\obj_hint</object>
+        <object>objects\obj_tv</object>
         <object>objects\obj_image_door</object>
       </objects>
       <objects name="factory">
