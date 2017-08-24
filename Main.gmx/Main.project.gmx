@@ -20,11 +20,12 @@
     <sprite>sprites\spr_torch_item</sprite>
     <sprite>sprites\spr_camera_spot</sprite>
     <sprite>sprites\spr_door</sprite>
-    <sprites name="levels">
+
+    <sprites name="map_obj">
       <sprites name="tut">
-        <sprite>sprites\spr_hint_door</sprite>
+      <sprite>sprites\spr_tivi</sprite>
         <sprite>sprites\spr_hint</sprite>
-      </sprites>
+    </sprites>
     </sprites>
     <sprite>sprites\spr_template</sprite>
   </sprites>
@@ -77,8 +78,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\tut_room</room>
     <room>rooms\factory_room</room>
+    <room>rooms\tut_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
