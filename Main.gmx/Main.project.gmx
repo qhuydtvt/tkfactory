@@ -82,6 +82,9 @@
         <object>objects\obj_nuke_controller</object>
       </objects>
     </objects>
+    <objects name="sounds">
+      <object>objects\obj_sound_theme</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\tut_room</room>
